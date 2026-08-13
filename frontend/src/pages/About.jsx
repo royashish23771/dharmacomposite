@@ -64,6 +64,18 @@ const About = () => {
               very environments that consume it.
             </p>
           </FadeUp>
+          <FadeUp delay={0.65} className="mt-12">
+            <div
+              data-testid="about-brand-card"
+              className="inline-block border border-white/10 bg-white px-8 py-6"
+            >
+              <img
+                src="/images/logo-full.png"
+                alt="Dharma Composite Private Limited — Delivering Industrial Excellence"
+                className="h-24 w-auto lg:h-28"
+              />
+            </div>
+          </FadeUp>
         </div>
       </section>
 

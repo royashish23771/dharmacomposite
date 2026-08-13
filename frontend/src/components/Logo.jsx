@@ -2,9 +2,12 @@ import { Link } from "react-router-dom";
 
 const Logo = () => (
   <Link to="/" className="flex items-center gap-3 group" data-testid="logo-link">
-    <div className="relative flex h-10 w-10 items-center justify-center border border-white/25 bg-slate-950">
-      <span className="font-display text-lg leading-none text-slate-50">DC</span>
-      <span className="absolute -bottom-[2px] -right-[2px] h-2.5 w-2.5 bg-orange-600 transition-colors duration-300 group-hover:bg-orange-500" />
+    <div className="flex h-11 items-center border border-white/15 bg-white px-2.5 transition-colors duration-300 group-hover:border-orange-600">
+      <img
+        src="/images/logo-mark.png"
+        alt="Dharma Composite logo"
+        className="h-7 w-auto"
+      />
     </div>
     <div className="leading-none">
       <div className="font-display text-lg tracking-wide text-slate-50">DHARMA</div>

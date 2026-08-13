@@ -24,6 +24,7 @@ User answers: Industry — FRP products & tanks manufacturing. Multi-page site. 
 5. Corporate-professional, award-level design with premium motion
 
 ## Implemented (2026-08-13)
+- Real company logo integrated: DC monogram badge in header/footer, full lockup brand card on About page (from user-uploaded Logo.png)
 - Kinetic hero with masked line-by-line reveal, parallax factory bg, rotating FRP·GRP ring, spec bar
 - Editorial product marquee (home + about)
 - Numbered manifesto chapters (Precision Moulding / Corrosion Immunity / Engineered Chemistry)
@@ -35,7 +36,6 @@ User answers: Industry — FRP products & tanks manufacturing. Multi-page site. 
 - Lenis smooth scrolling, noise texture, custom scrollbar, orange selection
 
 ## Backlog / Next Tasks
-- P0: Swap placeholder "DC" monogram with user's real logo (awaiting file)
 - P1: Email notification on enquiry (Resend integration) — user declined initially
 - P1: Admin page to view stored enquiries (GET /api/enquiries exists, unprotected — needs auth if exposed)
 - P2: Real product photography from the user's plant
