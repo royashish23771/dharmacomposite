@@ -1,0 +1,135 @@
+{
+  "project_name": "Dharma Composite Private Limited",
+  "project_type": "Corporate Multi-page Marketing Website",
+  "theme": "dark",
+  "typography": {
+    "headings": {
+      "font_family": "Anton, sans-serif",
+      "description": "Bold, condensed display typography for maximum industrial impact. Used for Hero H1 and major section headers.",
+      "classes": "font-sans uppercase tracking-tight"
+    },
+    "body": {
+      "font_family": "IBM Plex Sans, sans-serif",
+      "description": "Clean, highly legible grotesque font resembling engineering documents.",
+      "classes": "font-sans tracking-normal leading-relaxed"
+    },
+    "mono_accents": {
+      "font_family": "JetBrains Mono, monospace",
+      "description": "Used for manifestos, chapter numbers, spec-sheet data, and overlines.",
+      "classes": "font-mono tracking-[0.2em] uppercase text-sm"
+    }
+  },
+  "colors": {
+    "background": "#020617",
+    "surface_glass": "rgba(15, 23, 42, 0.6)",
+    "surface_solid": "#0F172A",
+    "primary_accent": "#EA580C",
+    "primary_accent_hover": "#C2410C",
+    "text_main": "#F8FAFC",
+    "text_muted": "#94A3B8",
+    "border_technical": "rgba(255, 255, 255, 0.15)",
+    "spec_sheet_bg": "#0B1120"
+  },
+  "visual_enhancers": {
+    "texture": "Subtle dark metal texture or noise overlay (opacity 3-5%) across the main background to eliminate digital flatness.",
+    "borders": "Industrial grid lines. Use border-collapse patterns. Containers should have distinct 1px solid borders (`border-white/10`) to resemble technical schematics.",
+    "glassmorphism": "Used strictly for the sticky header and floating interactive elements. Must have `backdrop-blur-xl`, a `bg-slate-950/70` fill, and a 1px inner border (`border-white/10`). Never fully transparent.",
+    "buttons": "Sharp-edged (no border radius) or slight 2px radius. High contrast. Primary buttons should be Safety Orange with dark text, or transparent with a Safety Orange border and hover fill."
+  },
+  "grids_and_layouts": {
+    "spacing_scale": "Use generous padding: py-24 or py-32 for sections, gap-8 to gap-16 for grids.",
+    "bento_grid": "For the Products section (7 items). Use a combination of col-span-2 and col-span-4 to create an asymmetrical technical grid. Ensure all items have a `border-r` and `border-b` mimicking a blueprint.",
+    "alignment": "Strict left-alignment for text to maintain an engineering report aesthetic. Center alignment only used for the Marquee."
+  },
+  "motion": {
+    "smooth_scroll": "MANDATORY: Use `lenis` for premium smooth scrolling momentum.",
+    "kinetic_hero": "Line-by-line text reveal using framer-motion. Wrap lines in `overflow-hidden` spans. Animate inner text `y: '100%'` to `y: '0'` with an ease-out-cubic transition (duration: 0.8s, stagger: 0.1s).",
+    "parallax": "Use framer-motion `useScroll` and `useTransform` to create subtle parallax on hero images and large typography backgrounds.",
+    "editorial_marquee": "Use `react-fast-marquee`. Slow, continuous scroll. Text should be large outlined typography (`text-transparent stroke-white stroke-1`) or solid Safety Orange."
+  },
+  "page_structure": {
+    "global": {
+      "header": "Sticky with backdrop blur, Company Logo, Desktop Nav Links (Home, About, Products, Contact), and a 'Get Quote' CTA.",
+      "footer": "Massive footer. `py-32`. Huge 'DHARMA COMPOSITE' typography. Grid containing address, contact, and quick links."
+    },
+    "home": {
+      "sections": [
+        "Hero: Kinetic typography ('ENGINEERED COMPOSITE SOLUTIONS'), subtle 3D/parallax background of industrial dark factory.",
+        "Marquee: Scrolling text of the 7 product categories.",
+        "Numbered Manifesto: 'Why Us' chapters (01. Precision, 02. Durability, 03. Chemistry).",
+        "Product Teaser: Bento grid of top categories."
+      ]
+    },
+    "about": {
+      "description": "Company history, manufacturing capability in Bhiwadi, and mission statement presented in a spec-sheet format."
+    },
+    "products": {
+      "categories": [
+        "FRP Tanks",
+        "Storage Tanks",
+        "FRP Fitting Products",
+        "FRP Hoods",
+        "FRP Blowers",
+        "FRP Air Pollution Control Systems",
+        "FRP Fume Extraction Systems"
+      ],
+      "layout": "Grid list. Hovering over a row reveals an image associated with the product (framer-motion image follow cursor pattern, or simple fade in on the side)."
+    },
+    "contact": {
+      "details": {
+        "email": "admin@dharmacomposite.com",
+        "phone": "+91 8295634906",
+        "address": "Bhiwadi, Rajasthan 301019, India"
+      },
+      "form": "Name, Company, Requirement, Submit. On submit, replace form with a success message ('REQUEST RECEIVED. OUR ENGINEERING TEAM WILL CONTACT YOU SHORTLY.'). No backend email integration."
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/15288012/pexels-photo-15288012.jpeg",
+      "description": "Dark, moody industrial factory interior. Use with a heavy slate-950 overlay (e.g., bg-slate-950/70) so the kinetic text pops.",
+      "category": "Hero"
+    },
+    "manifesto_texture": {
+      "url": "https://images.pexels.com/photos/6800730/pexels-photo-6800730.jpeg",
+      "description": "Abstract dark metal diamond-plate texture for background layers in the Manifesto or About section.",
+      "category": "Background"
+    },
+    "products_tanks": {
+      "url": "https://images.unsplash.com/photo-1764675903377-bcb7489dfcb8",
+      "description": "Industrial silos/tanks against sky. Use for FRP Tanks and Storage Tanks categories.",
+      "category": "Products"
+    },
+    "products_fittings": {
+      "url": "https://images.unsplash.com/photo-1542274368-443d694d79aa",
+      "description": "Industrial gold/orange pipes. Use for FRP Fitting Products.",
+      "category": "Products"
+    }
+  },
+  "libraries_and_components": {
+    "required_packages": [
+      "framer-motion",
+      "lucide-react",
+      "react-fast-marquee",
+      "clsx",
+      "tailwind-merge"
+    ],
+    "shadcn_components": [
+      "Button (customized to sharp corners)",
+      "Input",
+      "Textarea",
+      "Form"
+    ],
+    "icons": "lucide-react (Technical icons like ArrowUpRight, Zap, Shield, Factory)"
+  },
+  "universal_guidelines_for_main_agent": [
+    "Do NOT apply universal transition (`transition: all`) in CSS.",
+    "Do NOT center align the app container. Remove `.App { text-align: center; }`.",
+    "All text content should be placed over solid or blurred backgrounds to maintain contrast.",
+    "Never use full transparency for header backgrounds. Use `bg-slate-950/80 backdrop-blur-xl`.",
+    "Always apply `data-testid` to interactive elements (e.g., `data-testid=\"contact-submit-button\"`).",
+    "Use framer-motion strictly as direct children of grid containers to prevent layout breaking.",
+    "Implement Lenis smooth scroll wrapping the entire app.",
+    "Use custom geometric and sharp component styling (not the default Vercel look). Shadcn components must be styled with tailwind overrides for square borders `rounded-none` and industrial borders `border-slate-800`."
+  ]
+}
